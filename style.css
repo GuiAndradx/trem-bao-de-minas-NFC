@@ -22,7 +22,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-.botoes button {
+.botoes .botao {
   display: block;
   width: 90%;
   max-width: 300px;
@@ -34,33 +34,68 @@ h1 {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
+  text-align: center;
   transition: background 0.2s;
+  outline: none;
 }
 
-.botoes button:hover {
+.botoes .botao:hover {
   background-color: #8b1a1a;
 }
 
-.cardapio {
-  margin-top: 40px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
-
-.cardapio h2 {
-  text-align: center;
-  color: #b22222;
-}
-
-.item {
-  margin-bottom: 10px;
-  font-size: 18px;
+.botoes .botao:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 footer {
   margin-top: 40px;
   font-size: 14px;
   color: #777;
+}
+
+/* Carrossel */
+.carrossel {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  user-select: none;
+}
+.wifi-qr {
+  max-width: 300px;
+  margin: 30px auto 10px;
+  text-align: center;
+}
+
+.wifi-qr img {
+  max-width: 200px;
+  width: 80%;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(178, 34, 34, 0.3);
+}
+
+.wifi-qr-info {
+  color: #b22222;
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 8px;
+  opacity: 0.7;
 }
